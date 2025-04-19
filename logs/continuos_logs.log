@@ -1,1 +1,37 @@
 [2025-04-10 13:09:45,918: INFO: main: Logging is Implemented]
+[2025-04-19 12:20:18,369: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 12:20:18,593: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 12:22:16,207: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 12:22:16,212: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 12:22:16,259: INFO: common: created directory at: artifacts]
+[2025-04-19 12:22:16,263: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-19 12:22:36,744: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 12:22:36,747: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 12:22:36,750: INFO: common: created directory at: artifacts]
+[2025-04-19 12:22:36,752: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-19 12:22:39,790: INFO: 2266689133: File is downloaded]
+[2025-04-19 12:48:20,745: INFO: main: stage Data Ingestion Stage initiated]
+[2025-04-19 12:48:20,745: ERROR: main: DataIngestionTrainingPipeline.initiate_data_ingestion() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "E:\TextSummarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+TypeError: DataIngestionTrainingPipeline.initiate_data_ingestion() missing 1 required positional argument: 'self'
+[2025-04-19 13:02:38,354: INFO: main: stage Data Ingestion Stage initiated]
+[2025-04-19 13:02:38,354: ERROR: main: name 'self' is not defined]
+Traceback (most recent call last):
+  File "E:\TextSummarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion(self)
+NameError: name 'self' is not defined
+[2025-04-19 13:03:00,138: INFO: main: stage Data Ingestion Stage initiated]
+[2025-04-19 13:03:00,139: ERROR: main: DataIngestionTrainingPipeline.initiate_data_ingestion() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "E:\TextSummarizer\main.py", line 9, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+TypeError: DataIngestionTrainingPipeline.initiate_data_ingestion() missing 1 required positional argument: 'self'
+[2025-04-19 13:04:20,834: INFO: main: stage Data Ingestion Stage initiated]
+[2025-04-19 13:04:20,841: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-19 13:04:20,841: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-19 13:04:20,843: INFO: common: created directory at: artifacts]
+[2025-04-19 13:04:20,843: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-19 13:04:20,843: INFO: data_ingestion: File already exits]
+[2025-04-19 13:04:21,331: INFO: main: Stage Data Ingestion Stage Completed]
