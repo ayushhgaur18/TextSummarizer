@@ -56,3 +56,97 @@ TypeError: DataIngestionTrainingPipeline.initiate_data_ingestion() missing 1 req
 [2025-04-21 18:11:16,726: INFO: common: created directory at: artifacts]
 [2025-04-21 18:11:16,726: INFO: common: created directory at: artifacts/data_transformation]
 [2025-04-21 18:11:24,171: INFO: main: Stage Data Transformation Stage Completed]
+[2025-04-21 18:52:51,873: INFO: config: PyTorch version 2.6.0 available.]
+[2025-04-21 18:57:45,892: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 18:57:45,984: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 18:57:46,179: INFO: common: created directory at: artifacts]
+[2025-04-21 18:57:46,181: INFO: common: created directory at: artifacts/model_trainer]
+[2025-04-21 19:56:04,811: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 19:56:05,228: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 19:56:05,413: INFO: common: created directory at: artifacts]
+[2025-04-21 19:56:05,526: INFO: common: created directory at: artifacts/model_trainer]
+[2025-04-21 20:01:09,676: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:01:09,680: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:01:09,682: INFO: common: created directory at: artifacts]
+[2025-04-21 20:01:09,683: INFO: common: created directory at: artifacts/model_trainer]
+[2025-04-21 20:21:35,848: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-04-21 20:21:36,496: INFO: config: PyTorch version 2.6.0 available.]
+[2025-04-21 20:21:37,553: INFO: main: stage Data Ingestion Stage initiated]
+[2025-04-21 20:21:37,554: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:21:37,556: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:21:37,557: INFO: common: created directory at: artifacts]
+[2025-04-21 20:21:37,557: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-21 20:21:37,557: INFO: data_ingestion: File already exits]
+[2025-04-21 20:21:38,522: INFO: main: Stage Data Ingestion Stage Completed]
+[2025-04-21 20:21:38,523: INFO: main: stage Data Transformation Stage initiated]
+[2025-04-21 20:21:38,525: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:21:38,526: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:21:38,526: INFO: common: created directory at: artifacts]
+[2025-04-21 20:21:38,526: INFO: common: created directory at: artifacts/data_transformation]
+[2025-04-21 20:21:42,150: INFO: main: Stage Data Transformation Stage Completed]
+[2025-04-21 20:21:42,151: INFO: main: stage Model Trainer Stage initiated]
+[2025-04-21 20:21:42,153: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:21:42,155: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:21:42,156: INFO: common: created directory at: artifacts]
+[2025-04-21 20:21:42,156: INFO: common: created directory at: artifacts/model_trainer]
+[2025-04-21 20:22:06,184: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`]
+Traceback (most recent call last):
+  File "E:\TextSummarizer\main.py", line 33, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\TextSummarizer\src\TextSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 13, in initiate_model_trainer
+    model_trainer.train()
+  File "E:\TextSummarizer\src\TextSummarizer\components\model_trainer.py", line 22, in train
+    trainer_args = TrainingArguments(
+                   ^^^^^^^^^^^^^^^^^^
+  File "<string>", line 135, in __init__
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\transformers\training_args.py", line 1808, in __post_init__
+    self.device
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\transformers\training_args.py", line 2344, in device
+    return self._setup_devices
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\transformers\utils\generic.py", line 62, in __get__
+    cached = self.fget(obj)
+             ^^^^^^^^^^^^^^
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\transformers\training_args.py", line 2214, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.26.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=0.26.0'`
+[2025-04-21 20:24:08,841: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-04-21 20:24:09,376: INFO: config: PyTorch version 2.6.0 available.]
+[2025-04-21 20:24:10,476: INFO: main: stage Data Ingestion Stage initiated]
+[2025-04-21 20:24:10,478: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:24:10,478: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:24:10,478: INFO: common: created directory at: artifacts]
+[2025-04-21 20:24:10,507: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-21 20:24:10,507: INFO: data_ingestion: File already exits]
+[2025-04-21 20:24:11,493: INFO: main: Stage Data Ingestion Stage Completed]
+[2025-04-21 20:24:11,493: INFO: main: stage Data Transformation Stage initiated]
+[2025-04-21 20:24:11,502: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:24:11,502: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:24:11,502: INFO: common: created directory at: artifacts]
+[2025-04-21 20:24:11,502: INFO: common: created directory at: artifacts/data_transformation]
+[2025-04-21 20:24:14,385: INFO: main: Stage Data Transformation Stage Completed]
+[2025-04-21 20:24:14,385: INFO: main: stage Model Trainer Stage initiated]
+[2025-04-21 20:24:14,388: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:24:14,390: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:24:14,391: INFO: common: created directory at: artifacts]
+[2025-04-21 20:24:14,391: INFO: common: created directory at: artifacts/model_trainer]
+[2025-04-21 20:49:28,150: INFO: utils: NumExpr defaulting to 8 threads.]
+[2025-04-21 20:49:29,053: INFO: config: PyTorch version 2.6.0 available.]
+[2025-04-21 20:49:30,312: INFO: main: stage Data Ingestion Stage initiated]
+[2025-04-21 20:49:30,312: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:49:30,312: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:49:30,312: INFO: common: created directory at: artifacts]
+[2025-04-21 20:49:30,312: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-21 20:49:30,312: INFO: data_ingestion: File already exits]
+[2025-04-21 20:49:31,293: INFO: main: Stage Data Ingestion Stage Completed]
+[2025-04-21 20:49:31,293: INFO: main: stage Data Transformation Stage initiated]
+[2025-04-21 20:49:31,299: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:49:31,304: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:49:31,305: INFO: common: created directory at: artifacts]
+[2025-04-21 20:49:31,306: INFO: common: created directory at: artifacts/data_transformation]
+[2025-04-21 20:49:38,404: INFO: main: Stage Data Transformation Stage Completed]
+[2025-04-21 20:49:38,404: INFO: main: stage Model Trainer Stage initiated]
+[2025-04-21 20:49:38,406: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-21 20:49:38,407: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-21 20:49:38,409: INFO: common: created directory at: artifacts]
+[2025-04-21 20:49:38,409: INFO: common: created directory at: artifacts/model_trainer]

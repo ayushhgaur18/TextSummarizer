@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/TextSummarizer/mlruns/0/086f663008be4fc3afd8c566bd2ca724/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 086f663008be4fc3afd8c566bd2ca724
+run_name: artifacts/model_trainer
+run_uuid: 086f663008be4fc3afd8c566bd2ca724
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745248797888
+status: 1
+tags: []
+user_id: DELL
